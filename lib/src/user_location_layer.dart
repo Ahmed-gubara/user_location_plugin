@@ -157,8 +157,8 @@ class _MapsPluginLayerState extends State<MapsPluginLayer>
           printLog("Direction : " + (_direction ?? 0).toString());
 
           _locationMarker = UserLocationMarker(
-            height: 20.0,
-            width: 20.0,
+            height: 60.0,
+            width: 60.0,
             point:
                 LatLng(_currentLocation.latitude, _currentLocation.longitude),
             builder: (context) {
