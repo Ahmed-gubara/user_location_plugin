@@ -258,9 +258,9 @@ class _MapsPluginLayerState extends State<MapsPluginLayer>
   void _handleCompassDirection() {
     if (widget.options.showHeading) {
       _compassStreamSubscription =
-          FlutterCompass.events.listen((double direction) {
+          FlutterCompass.events.listen((CompassEvent compassEvent) {
         setState(() {
-          _direction = direction;
+          _direction = compassEvent.heading;
         });
         forceMapUpdate();
       });
