@@ -37,7 +37,7 @@ class _MapsPluginLayerState extends State<MapsPluginLayer>
   double _direction;
 
   StreamSubscription<LocationData> _onLocationChangedStreamSubscription;
-  StreamSubscription<double> _compassStreamSubscription;
+  StreamSubscription<CompassEvent> _compassStreamSubscription;
   StreamSubscription _locationStatusChangeSubscription;
 
   @override
